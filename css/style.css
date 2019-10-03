@@ -785,37 +785,45 @@ html, body {
   padding-left: 50px;
   padding-top: 18px;
   padding-right: 27px;
-  min-height: 180px;
 }
 
 .footer-social-flex {
   display: flex;
   justify-content: space-between;
-  border: 1px solid gray;
-
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contacts-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  border: 1px solid gray;
   margin: 0;
   padding: 0;
-  width: 305px;
+  width: 310px;
 }
-.footer-contacts-flex li {
+
+.footer-contacts-flex li:nth-of-type(odds) {
+  width: 140px;
+}
+
+.footer-contacts-flex li:nth-of-type(even) {
+  width: 170px;
   margin-left: auto;
 }
 
+/*
 .footer-contacts-flex li:first-of-type {
   list-style: url("../img/heart.svg");
-}
+}*/
 
 .footer-copyright {
-  border: 1px solid gray;
   width: 189px;
 
+}
+
+.footer-copyright p {
+  margin: 0;
 }
 
 .breadcrumbs {
