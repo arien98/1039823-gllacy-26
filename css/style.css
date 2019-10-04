@@ -757,6 +757,7 @@ html, body {
   margin: 0;
   margin-top: 39px;
   height: 430px;
+  position: relative;
 }
 
 .contacts-box {
@@ -767,10 +768,9 @@ html, body {
   padding-left: 25px;
   padding-top: 32px;
   padding-right: 25px;
-  position: relative;
-  margin: 0;
-  top: -367px;
-  left: 894px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .contacts-box :first-child {
