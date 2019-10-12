@@ -56,7 +56,7 @@
                       <label for="login-field" class="visually-hidden">Электронный адрес</label>
                       <input type="email" name="login" id="login-field" placeholder="email@example.com">
                       <label for="password-field" class="visually-hidden">Пароль</label>
-                      <input type="password" name="password" id="password-field" placeholder="password">
+                      <input type="password" name="password" id="password-field" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
                       <div class="login-button-field">
                         <button type="submit" class="button login-button">Войти</button>
                         <p>
@@ -140,7 +140,9 @@
                 <span>джемом и цитрусовой стружкой</span>
               </a>
               <a href="#"><img src="img/product-1.jpg" alt="" width="267" height="267"></a>
-              <p class="price">310&#x20bd;<span class="catalog-item_unit">/кг</span></p>
+              <div class="price">310
+                <div class="catalog-item_unit">/кг</div>
+              </div>
               <button class="catalog-item-button button" type="button" name="item-button">Быстрый просмотр</button>
             </li>
             <li class="catalog-item">
@@ -149,7 +151,7 @@
                 <span>шоколада</span>
               </a>
               <a href="#"><img src="img/product-2.jpg" alt="" width="267" height="267"></a>
-              <p class="price">380&#x20bd;<span class="catalog-item_unit">/кг</span></p>
+              <div class="price">380 <div class="catalog-item_unit">/кг</div></div>
               <button class="catalog-item-button button" type="button" name="item-button">Быстрый просмотр</button>
             </li>
             <li class="catalog-item">
@@ -157,7 +159,7 @@
                 <span>Сливочно-клубничное с</span>
                 <span>присыпкой из белого шоколада</span>
               <a href="#"><img src="img/product-3.jpg" alt="" width="267" height="267"></a>
-              <p class="price">355&#x20bd;<span class="catalog-item_unit">/кг</span></p>
+              <div class="price">355 <div class="catalog-item_unit">/кг</div></div>
               <button class="catalog-item-button button" type="button" name="item-button">Быстрый просмотр</button>
             </li>
             <li class="catalog-item">
@@ -165,7 +167,7 @@
                 <span>Сливочное крем-брюле с</span>
                 <span>карамельной подливкой</span>
               <a href="#"><img src="img/product-4.jpg" alt="" width="267" height="267"></a>
-              <p class="price">415&#x20bd;<span class="catalog-item_unit">/кг</span></p>
+              <div class="price">415 <div class="catalog-item_unit">/кг</div></div>
               <button class="catalog-item-button button" type="button" name="item-button">Быстрый просмотр</button>
             </li>
           </ul>
@@ -178,7 +180,7 @@
               <li>Все наше мороженое изготавливается на собственном производстве,
                  с использованием современного оборудования и проверенных временем
                  технологий.</li>
-              <li>Закупка ингредиентов  производится только у проверенных фермерских
+              <li>Закупка ингредиентов &nbsp; производится только у проверенных фермерских
                 хозяйств и компаний, с которыми нас связывает долговременное
                 сотрудничество.</li>
               <li>Для приготовления мороженого используются настоящие сливки и
@@ -194,16 +196,20 @@
             <h2>Новое в нашем блоге</h2>
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </section>
+
           <section class="mailing">
+            <div class="mailing-wrap">
             <h2 class="visually-hidden">Рассылка</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-              самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-              всякой ненужной ерунды. Честно =) </p>
-            <form action="https://echo.htmlacademy.ru " method="post" class="mailing-form">
-              <label for="login-field" class="visually-hidden">Электронный адрес</label>
-              <input type="email" name="email-subscribe" placeholder="email@example.com">
-              <button type="submit" class="button mailing-button">Отправить</button>
-            </form>
+
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+                самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+                всякой ненужной ерунды. Честно =) </p>
+              <form action="https://echo.htmlacademy.ru " method="post" class="mailing-form">
+                <label for="login-field" class="visually-hidden">Электронный адрес</label>
+                <input type="email" name="email-subscribe" placeholder="email@example.com">
+                <button type="submit" class="button mailing-button">Отправить</button>
+              </form>
+            </div>
           </section>
         </div>
         <section class="contacts">

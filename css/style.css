@@ -68,7 +68,7 @@ body {
 }
 
 .inner-page {
-  padding-top: 10px;
+  padding-top: 9px;
   width: 1146px;
   margin: 0 auto;
 }
@@ -296,7 +296,7 @@ a {
   align-items: stretch;
   z-index: 2;
 
-  transition:
+  transition: all 0.5s ease;
 
   font-size: 14px;
   color: rgb(50, 50, 50);
@@ -367,7 +367,7 @@ a {
 }
 
 .user-navigation li {
-  margin-left: 11px;
+  margin-left: 10px;
 }
 
 .user-navigation a {
@@ -432,7 +432,7 @@ a {
   width: 21px;
   height: 19px;
   top: 7px;
-  left: 7px;
+  left: 8px;
 
   background-image: url("../img/loupe.svg");
   background-position: 0 0;
@@ -446,7 +446,7 @@ a {
   width: 21px;
   height: 19px;
   top: 7px;
-  left: 7px;
+  left: 8px;
 
   background-image: url("../img/loupe-black.svg");
   background-position: 0 0;
@@ -455,7 +455,7 @@ a {
 
 .entry-button {
   margin: 0;
-  padding: 6px 16px 10px 43px;
+  padding: 6px 19px 10px 43px;
   border-radius: 33px;
   color: #ffffff;
   background-color: rgb(255, 255, 255, 0.2);
@@ -468,8 +468,8 @@ a {
   position: absolute;
   width: 21px;
   height: 19px;
-  top: 6px;
-  left: 16px;
+  top: 5px;
+  left: 15px;
 
   background-image: url("../img/entrance.svg");
   background-position: 0 0;
@@ -482,8 +482,8 @@ a {
   position: absolute;
   width: 21px;
   height: 19px;
-  top: 6px;
-  left: 16px;
+  top: 5px;
+  left: 15px;
 
   background-image: url("../img/entrance-black.svg");
   background-position: 0 0;
@@ -501,8 +501,8 @@ a {
 
   position: absolute;
   right: 0;
-  top: 35px;
-  width: 277px;
+  top: 32px;
+  width: 241px;
   z-index: 6;
 
   display: flex;
@@ -510,7 +510,7 @@ a {
   justify-content: space-between;
 
   margin: 0;
-  padding: 20px;
+  padding: 20px 17px 20px 19px;
 
   display: none;
 }
@@ -530,33 +530,58 @@ a {
 .login-button {
   display:block;
   width: 100px;
-  height: 44px;
+  height: 45px;
   margin-right: auto;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
+
 .login-window input {
-  width:100%;
   box-sizing: border-box;
   margin-bottom: 20px;
-  padding:15px;
+  padding: 9px 15px 9px 12px;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(211, 211, 210, 0.52);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.52);
   width: 100%;
-  height: 48px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  background-color: transparent;
+  border: 1px solid rgba(178,178,178,0.52);
 }
 
 .login-window input:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
-.login-window input:active {
+.login-window input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
 .login-window p {
   margin: 0;
+  margin-right: 3px;
+}
+
+.login-window a {
+  font-size: 13px;
+  line-height: 22px;
+  color: #323232;
+  display: block;
+  text-decoration: underline;
+  text-decoration-color: #323232;
+}
+
+.login-window a:hover,
+.login-window a:focus,
+.login-window a:active {
+  color: rgb(232, 77, 55);
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .bin-button {
@@ -623,12 +648,12 @@ a {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 
-  padding: 20px 15px;
-  min-width: 540px;
+  padding: 16px 15px 20px 15px;
+  min-width: 510px;
 
   position: absolute;
   right: 0;
-  top: 56px;
+  top: 60px;
   z-index: 5;
 
   display: none;
@@ -637,35 +662,47 @@ a {
 .bin-box_row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   font-size: 13px;
   line-height: 16px;
   color: #323232;
+  margin-bottom: 16px;
 
   position: relative;
 }
 
 .bin-box_name {
   width: 220px;
-  margin-right: 33px;
+  margin: 0;
+  margin-top: 13px;
+  margin-right: 27px;
 }
 
-.bin-box_weight, .bin-box_price {
+.bin-box_weight {
   margin:0;
+  margin-top: 13px;
+  margin-right: 2px;
 }
 
 .bin-box_price {
+  margin:0;
+  margin-top: 13px;
+  margin-right: auto;
+
   color: #999999;
 }
 
 .bin-box_sum {
-  margin-left: auto;
+  margin:0;
+  margin-top: 13px;
+  margin-right: 19px;
 }
 
 .bin-box_row img {
   display: block;
   order: -1;
+  margin-top: 4px;
   margin-left: 27px;
   margin-right: 13px;
   width: 33px;
@@ -676,6 +713,7 @@ a {
 .sum-line {
   height: 1px;
   margin: 0;
+  margin-bottom: 14px;
   padding: 0;
 
   background-color: rgb(202, 202, 199);
@@ -685,8 +723,8 @@ a {
   background-color: transparent;
   border: none;
 
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
 
   position: absolute;
   left: 0;
@@ -697,9 +735,9 @@ a {
   content: "";
 
   position: absolute;
-  width: 11px;
-  height: 11px;
-  top: 0;
+  width: 12px;
+  height: 12px;
+  top: 14px;
   left: 0;
 
   background-image: url("../img/cross-small.svg");
@@ -707,18 +745,25 @@ a {
   background-repeat: no-repeat;
 }
 
-.bin-box .total-price {
+.total-price {
   font-size: 15px;
   color: rgb(50, 50, 50);
   font-weight: bold;
   line-height: 18px;
   text-align: right;
+
+  margin: 0;
+  margin-bottom: 14px;
+  margin-right: -1px;
 }
 
 .bin-box_button {
   width: 170px;
   height: 44px;
   float: right;
+
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .more-info {
@@ -730,9 +775,6 @@ a {
 .more-info h2,
 .more-info p {
   margin: 0;
-}
-.inner-page .more-info p {
-  letter-spacing: 0.5px;
 }
 
 .more-info_time {
@@ -761,7 +803,8 @@ a {
 }
 
 .special-offer p {
-  margin: 14px 0;
+  margin: 0;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -804,12 +847,12 @@ a {
 .raspberry-offer h3,
 .chocolate-offer h3 {
   margin: 0;
+  margin-bottom: 14px;
 }
 
 .offer-button {
   display: flex;
   justify-content: flex-end;
-  margin-top: 43px;
   width: auto;
   margin-left: auto;
 }
@@ -898,23 +941,33 @@ a {
   padding: 0;
   top:209px;
   left: -1px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
-.catalog-item_unit{
+.catalog-item_unit {
   font-size: 30px;
+
+  margin:0;
+  margin-left: 36px;
+
+  position: relative;
 }
-.₽_кг_copy_15 {
-  font-size: 45px;
-  font-family: "Roboto";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1;
-  text-align: left;
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+
+.catalog-item_unit::before {
+  content: "";
+
   position: absolute;
-  left: 984.719px;
-  top: 1168.504px;
-  z-index: 153;
+  width: 30px;
+  height: 34px;
+  top: -2px;
+  left: -32px;
+
+  background-image: url("../img/ruble.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .catalog-item-button {
@@ -970,6 +1023,7 @@ a {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  letter-spacing: 0.1px;
 }
 
 .odds-flex {
@@ -987,7 +1041,7 @@ a {
   width: 487px;
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   margin-left: 55px;
 
   font-size: 16px;
@@ -1112,22 +1166,28 @@ a {
 }
 
 .mailing {
-  background-color: rgba(248,247,244,1);
-  border: 5px solid rgba(0, 0, 0, 0.4);
-  border-width: 5px;
-  border-image-source: url("../img/bg-post.svg");
-  border-image-slice: 5;
-  border-image-repeat: round;
+  background-image: url("../img/bg-post.svg");
   border-radius: 15px;
-  background-clip: padding-box;
-  background-origin: content-box;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  width: 550px;
+  padding: 5px;
+  margin: 0;
+
+}
+
+.mailing-wrap {
+  border-radius: 15px;
+  background-color: rgb(248,247,244);
+
 
   width: 506px;
   padding-top: 29px;
   padding-left: 22px;
   padding-right: 22px;
   padding-bottom: 35px;
-
 }
 
 .mailing p {
@@ -1284,6 +1344,7 @@ a {
   align-items: flex-end;
   margin-top: 18px;
   padding: 0;
+  margin-right: -2px;
 }
 
 .footer-social-flex {
@@ -1456,46 +1517,14 @@ a {
   background-color: rgb(248, 247, 244);
 }
 
-.login-window input {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #323232;
-  background-color: transparent;
-  border: 1px solid rgba(178,178,178,0.52);
-}
-
-.login-window input:hover {
-  border: 2px solid rgba(154,154,154,0.52);
-}
-
-.login-window input:focus {
-  border: 2px solid rgba(46,136,228,0.52);
-}
-
-.login-window a {
-  font-size: 13px;
-  line-height: 24px;
-  color: #323232;
-  display: block;
-  text-decoration: underline;
-  text-decoration-color: #323232;
-}
-
-.login-window a:hover,
-.login-window a:focus,
-.login-window a:active {
-  color: rgb(232, 77, 55);
-  text-decoration-color: rgba(232, 77, 55, 0.3);
-}
 .search-field {
   position: relative;
 }
 
 .search-window {
   position: absolute;
-  top: 41px;
-  right: 0;
+  top: 37px;
+  right: 2px;
   z-index: 2;
 
   border-radius: 6px;
@@ -1517,15 +1546,25 @@ a {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.52);
 
-  width: 315px;
-  margin: 20px 15px;
-  padding: 15px;
+  width: 311px;
+  margin: 20px 15px 20px 15px;
+  padding: 8px 12px 10px 13px;
   box-sizing: border-box;
 
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #323232;
+}
+
+.search-window input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+  line-height: 1.714;
+  text-align: left;
+}
+
 }
 
 .search-window input:hover {
@@ -1585,7 +1624,6 @@ a {
 
 .feedback input::placeholder,
 .feedback textarea::placeholder,
-.search input::placeholder,
 .login-window input::placeholder,
 .mailing input::placeholder {
   color: #999999;
@@ -1726,6 +1764,7 @@ a {
 .on-page {
   background-color: rgb(208, 112, 88);
   color: #ffffff;
+  text-decoration: none;
 }
 
 .breadcrumbs {
@@ -1742,21 +1781,15 @@ a {
 
 .breadcrumbs li {
   margin-right: 21px;
-}
 
-.breadcrumbs-item {
   position: relative;
 }
 
-.breadcrumbs-item:not(:first-of-type)::before {
-  content: "";
-
-  background-image: url("../img/icon-right-small.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.breadcrumbs li:not(:first-of-type)::before {
+  content: "»";
 
   position: absolute;
-  left: -20px;
+  left: -13px;
 }
 
 .breadcrumbs a:not(.current-page) {
@@ -1783,7 +1816,7 @@ a {
 /*------------------фильтры---------------------*/
 
 .filters {
-  margin-top: 28px;
+  margin-top: 25px;
 }
 
 .filters h3 {
@@ -1904,13 +1937,14 @@ a {
   position: relative;
   height: 38px;
   margin-top: 6px;
+  padding-top: 8px;
+  padding-right: 16px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 38px;
   border: none;
 
   box-sizing: border-box;
-  vertical-align: middle;
 }
 
 .fat-box h3 {
@@ -1927,9 +1961,9 @@ a {
 
   position: relative;
 
-  width: 25px;
-  height: 25px;
-  margin-right: 9px;
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
   margin-left: 12px;
   vertical-align: middle;
 
@@ -1939,45 +1973,65 @@ a {
 .fat-choice::before {
   content: "";
 
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
 
   background-image: url("../img/radio-off-08.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 100%;
 
   position: absolute;
-  top:0;
-  left: 0;
+  top: -1px;
+  left: 1px;
   z-index: 3;
 }
 
-.fat-choice::before:hover {
+.fat-choice:hover::before {
   content: "";
 
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
 
   background-image: url("../img/radio-off.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 100%;
 
   position: absolute;
-  top:0;
-  left: 0;
+  top: -1px;
+  left: 1px;
   z-index: 3;
 }
 
 .fat-choice:checked::before {
   content: "";
 
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   background-image: url("../img/radio-on-08.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 100%;
 
   position: absolute;
+  top: -1px;
+  left: 1px;
+}
+
+.fat-choice:checked:hover::before {
+  content: "";
+
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/radio-on.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  position: absolute;
+  top: -1px;
+  left: 1px;
 }
 
 .filler-filter {
@@ -1986,6 +2040,7 @@ a {
   margin: 0;
   margin-top: 4px;
   padding-top: 8px;
+  padding-right: 19px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 38px;
@@ -2027,9 +2082,11 @@ a {
 
   width: 25px;
   height: 25px;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off-08.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 80%;
+
   top: 2px;
   left: 2px;
 
@@ -2041,9 +2098,39 @@ a {
 
   width: 25px;
   height: 25px;
+  background-image: url("../img/checkbox-on-08.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 95%;
+
+  position: absolute;
+}
+
+.filler:hover::before {
+  content: "";
+
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-off.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 80%;
+
+  top: 2px;
+  left: 2px;
+
+  position: absolute;
+}
+
+.filler:hover:checked::before {
+  content: "";
+
+  width: 25px;
+  height: 25px;
   background-image: url("../img/checkbox-on.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 95%;
 
   position: absolute;
 }
@@ -2052,10 +2139,10 @@ a {
   border: solid 2px rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.188);
   width: 146px;
-  height: 38px;
+  height: 36px;
   border-radius: 20px;
   color: #ffffff;
-  margin-left: 20px;
+  margin-left: 13px;
   margin-top: auto;
 }
 
@@ -2083,6 +2170,7 @@ a {
 
 .filters h3 {
   margin-left: 16px;
+  font-weight: 500;
 }
 /*---------------------------------------paginator----------------------------*/
 .paginator {
@@ -2125,7 +2213,7 @@ a {
   width: 8px;
   height: 12px;
 
-  background-image: url("../img/icon-right-small.svg");
+  background-image: url("../img/icon-right-small-right.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 
@@ -2160,9 +2248,13 @@ a {
   margin-right: -6px;
 }
 
-.paginator-sheet:not(.current-sheet):hover,
-.paginator-sheet:not(.current-sheet):focus {
+.paginator-sheet:not(.current-sheet):not(.last-sheet):hover,
+.paginator-sheet:not(.current-sheet):not(.last-sheet):focus {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.last-sheet {
+  cursor: pointer;
 }
 
 .paginator-sheet:not(.current-sheet):active {
