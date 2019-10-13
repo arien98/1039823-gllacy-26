@@ -254,6 +254,7 @@ a {
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 700;
 
   padding: 7px 13px 6px 14px;
   border-radius: 17px;
@@ -374,6 +375,7 @@ a {
   text-decoration: none;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 500;
 }
 
 .user-navigation a:hover,
@@ -455,7 +457,7 @@ a {
 
 .entry-button {
   margin: 0;
-  padding: 6px 19px 10px 43px;
+  padding: 6px 18px 10px 43px;
   border-radius: 33px;
   color: #ffffff;
   background-color: rgb(255, 255, 255, 0.2);
@@ -540,12 +542,11 @@ a {
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 9px 15px 9px 12px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(211, 211, 210, 0.52);
+  outline: 1px solid rgba(211, 211, 210, 0.52);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.52);
   width: 100%;
+  height: 44px;
 
   font-size: 14px;
   line-height: 24px;
@@ -804,7 +805,7 @@ a {
 
 .special-offer p {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -888,7 +889,7 @@ a {
   margin-bottom: -43px;
 }
 
-.catalog-item::before {
+.hit-item::before {
   content: "";
 
   background-image: url("../img/hit.svg");
@@ -916,6 +917,7 @@ a {
 
 .catalog-item_name {
   padding-top: 7px;
+  font-weight: 500;
 }
 
 .catalog-item a:hover,
@@ -934,7 +936,17 @@ a {
   display: block;
 }
 
+.ruble {
+  font-size: 45px;
+}
+
 .price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 3px rgba(45, 50, 53, 0.5);
+
   align-self: flex-end;
   position: absolute;
   margin: 0;
@@ -951,12 +963,11 @@ a {
   font-size: 30px;
 
   margin:0;
-  margin-left: 36px;
-
+  margin-left: 4px;
   position: relative;
 }
 
-.catalog-item_unit::before {
+/*.catalog-item_unit::before {
   content: "";
 
   position: absolute;
@@ -968,7 +979,7 @@ a {
   background-image: url("../img/ruble.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-}
+}*/
 
 .catalog-item-button {
   min-width: 200px;
@@ -991,11 +1002,7 @@ a {
 }
 
 .catalog .price {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
-  color: #ffffff;
-  text-shadow: 0 0 3px rgba(45, 50, 53, 0.5);
+
 }
 
 .catalog ul {
@@ -1208,6 +1215,9 @@ a {
   width: 129px;
   height: 44px;
   font-size: 18px;
+  line-height: 24px;
+  padding-right: 3px;
+  padding-top: 0px;
 }
 
 .mailing p {
@@ -1273,11 +1283,10 @@ a {
 
 .contacts-box {
   width: 252px;
-  min-height: 305px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   padding-left: 25px;
-  padding-top: 32px;
+  padding-top: 31px;
   padding-right: 25px;
   margin:0;
   margin-left: auto;
@@ -1327,10 +1336,12 @@ a {
 .contacts-button {
   width: 100%;
   margin-top: 25px;
+  margin-bottom: 29px;
   box-sizing: border-box;
-  padding: 11px 27px 15px 27px;
+  padding: 9px 27px 12px 27px;
   text-align: center;
   font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
 }
 
@@ -1547,6 +1558,7 @@ a {
   background-color: rgba(255, 255, 255, 0.52);
 
   width: 311px;
+  height: 44px;
   margin: 20px 15px 20px 15px;
   padding: 8px 12px 10px 13px;
   box-sizing: border-box;
@@ -1563,8 +1575,6 @@ a {
   color: rgb(153, 153, 153);
   line-height: 1.714;
   text-align: left;
-}
-
 }
 
 .search-window input:hover {
@@ -1609,9 +1619,11 @@ a {
   font-weight: 700;
   color: #323232;
   background-color: transparent;
-  border: 1px solid rgba(178,178,178,0.52);
-  display: block;
 
+  height: 44px;
+  border: 1px solid rgba(178,178,178,0.52);
+
+  display: block;
 }
 
 .feedback input:hover {
@@ -1654,14 +1666,14 @@ a {
   background-color: rgb(248, 247, 244);
 
   position: fixed;
-  left: 338px;
-  top: 337px;
-  width: 478px;
+  left: 388px;
+  top: 338px;
+  width: 429px;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 25px;
+  padding: 16px 25px 25px 23px;
 
   display: none;
 }
@@ -1671,6 +1683,7 @@ a {
   color: rgb(50, 50, 50);
   line-height: 1.167;
   margin: 0;
+  margin-bottom: 19px;
 }
 
 .feedback-window input {
@@ -1679,8 +1692,10 @@ a {
   background-color: rgba(255, 255, 255, 0.52);
 
   display: block;
-  width: 217px;
-  margin: 20px 0;
+  width: 268px;
+  height: 44px;
+  margin: 0;
+  margin-bottom: 20px;
   padding: 15px;
   box-sizing: border-box;
 }
@@ -1704,9 +1719,14 @@ a {
 
   display: block;
   width: 100%;
-  margin: 20px 0;
-  padding: 15px;
+  height: 155px;
+  margin-bottom: 25px;
+  padding: 12px 14px;
   box-sizing: border-box;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .feedback-window textarea:hover {
@@ -1723,7 +1743,7 @@ a {
 
 .feedback-button {
   display: block;
-  padding: 14px 24px;
+  padding: 11px 23px;
   align-self: stretch;
   font-size: 18px;
   color: rgb(254, 254, 254);
@@ -1736,7 +1756,7 @@ a {
   position: absolute;
   width: 18px;
   height: 17px;
-  right: 25px;
+  right: 16px;
 
   background-color: transparent;
   border: 0;
@@ -1775,6 +1795,7 @@ a {
   padding: 0;
 
   font-size: 14px;
+  line-height: 16px;
 
   list-style: none;
 }
@@ -1822,11 +1843,11 @@ a {
 .filters h3 {
   margin: 0;
   padding: 0;
-}
+  margin-left: 16px;
 
-.popularity-box h3 {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   color: white;
 }
 
@@ -1851,14 +1872,16 @@ a {
   appearance: none;
 }
 
-.price-filter  {
-  margin-left: 13px;
+.popularity-filter:hover {
+  color: #323232;
+  background-image:url('../img/icon-down-dir-black.svg');
+	background-repeat:no-repeat;
+	background-size: 11px 10px;
+	background-position: right 15px top 14px;
 }
 
-.price-filter h3 {
-  font-size: 14px;
-  line-height: 1.14;
-  color: white;
+.price-filter  {
+  margin-left: 13px;
 }
 
 .range-controls {
@@ -1928,7 +1951,6 @@ a {
   flex-wrap: wrap;
 }
 
-
 .fat-box {
   margin-left: 14px;
 }
@@ -1945,13 +1967,6 @@ a {
   border: none;
 
   box-sizing: border-box;
-}
-
-.fat-box h3 {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.14;
-  color: white;
 }
 
 .fat-choice  {
@@ -2054,13 +2069,6 @@ a {
   margin-top: 16px;
 }
 
-.filler-box h3 {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.14;
-  color: white;
-}
-
 .filler  {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2142,6 +2150,7 @@ a {
   height: 36px;
   border-radius: 20px;
   color: #ffffff;
+  font-weight: 500;
   margin-left: 13px;
   margin-top: auto;
 }
@@ -2168,10 +2177,6 @@ a {
   margin-left: 0;
 }
 
-.filters h3 {
-  margin-left: 16px;
-  font-weight: 500;
-}
 /*---------------------------------------paginator----------------------------*/
 .paginator {
   margin-top: 42px;
