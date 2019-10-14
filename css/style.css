@@ -253,7 +253,7 @@ a {
   text-decoration-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.2;
   font-weight: 700;
 
   padding: 7px 13px 6px 14px;
@@ -343,6 +343,11 @@ a {
 
 .on-page {
   background-color: rgb(208, 112, 88);
+}
+
+.on-page a{
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .catalog-list_line {
@@ -593,12 +598,12 @@ a {
 }
 
 .empty {
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
 
 .not-empty {
-  background-color: rgb(248, 247, 244, 0.988);
+  background-color: rgba(248, 247, 244, 0.988);
   color: rgb(50, 50, 50);
 }
 
@@ -1781,11 +1786,6 @@ a {
   background-color: rgb(248, 247, 244);
 }
 
-.on-page {
-  background-color: rgb(208, 112, 88);
-  color: #ffffff;
-  text-decoration: none;
-}
 
 .breadcrumbs {
   display: flex;
@@ -1838,6 +1838,7 @@ a {
 
 .filters {
   margin-top: 25px;
+  font-weight: 500;
 }
 
 .filters h3 {
