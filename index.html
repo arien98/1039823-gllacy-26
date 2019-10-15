@@ -267,17 +267,22 @@
 
 
 
-      <section class="modal feedback-window">
-        <h2>Мы обязательно вам ответим!</h2>
-        <form action="https://echo.htmlacademy.ru " method="post">
-          <label for="name-field" class="visually-hidden">Ваши имя и фамилия</label>
-          <input type="text" name="feedback-name" id="name-field" placeholder="Имя Фамилия">
-          <label for="email-field" class="visually-hidden">Ваш электронный адрес</label>
-          <input type="email" name="feedback-email" id="email-field" placeholder="email@example.com">
-          <textarea name="comment" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-          <button type="submit" class="button feedback-button">Отправить</button>
-        </form>
-        <button type="button" class="close-button"><span class="visually-hidden">Закрыть</span></button>
+      <section class="feedback">
+        <div class="modal feedback-window">
+          <h2>Мы обязательно вам ответим!</h2>
+          <form action="https://echo.htmlacademy.ru " method="post">
+            <label for="name-field" class="visually-hidden">Ваши имя и фамилия</label>
+            <input type="text" name="feedback-name" id="name-field" required placeholder="Имя Фамилия">
+            <label for="email-field" class="visually-hidden">Ваш электронный адрес</label>
+            <input type="email" name="feedback-email" id="email-field"  required placeholder="email@example.com">
+            <textarea name="comment" rows="8" cols="80" required  placeholder="В свободной форме"></textarea>
+            <button type="submit" class="button feedback-button">Отправить</button>
+          </form>
+          <button type="button" class="close-button"><span class="visually-hidden">Закрыть</span></button>
+        </div>
+        <div class="overlay">
+
+        </div>
       </section>
     </div>
     <script src="js/modal.js" type="text/javascript">

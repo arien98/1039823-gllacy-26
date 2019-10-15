@@ -1,4 +1,5 @@
 var modalLink = document.querySelector(".contacts-button");
+var modalOverlay = document.querySelector(".overlay");
 var modalWindow = document.querySelector(".feedback-window");
 var closeLink = document.querySelector(".close-button");
 
@@ -18,6 +19,7 @@ try {
 modalLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalWindow.classList.add("modal-show");
+  modalOverlay.classList.add("overlay-show");
 
   if (storage) {
     feedbackName.value = storage;
@@ -30,10 +32,11 @@ modalLink.addEventListener("click", function (evt) {
 closeLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalWindow.classList.remove("modal-show");
+  modalOverlay.classList.remove("overlay-show");
   modalWindow.classList.remove("modal-error");
 });
 
-modalForm.addEventListener("submit", function (evt) {
+/*modalForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
   if (!feedbackName.value || !feedbackEmail.value) {
     evt.preventDefault();
@@ -45,14 +48,14 @@ modalForm.addEventListener("submit", function (evt) {
       localStorage.setItem("feedbackName", feedbackName.value);
     };
   }
-
+*/
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (modalWindow.classList.contains("modal-show")) {
         modalWindow.classList.remove("modal-show");
+        modalOverlay.classList.remove("overlay-show");
         modalWindow.classList.remove("modal-error");
       }
     }
   });
-});
