@@ -1291,6 +1291,7 @@ a {
   min-width: 1223px;
   left: -50px;
   z-index: 3;
+  border: none; 
 }
 
 .contacts svg {
