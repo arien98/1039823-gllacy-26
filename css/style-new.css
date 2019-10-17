@@ -295,14 +295,6 @@ a {
     display: block;
 }
 
-/*.catalog-list a:active {
-  color: #323232;*/
-}
-
-/*.catalog-list li {
-  padding: 7px 14px 8px 20px;
-}*/
-
 .catalog-list li:first-child {
     padding-top: 10px;
     padding-bottom: 0;

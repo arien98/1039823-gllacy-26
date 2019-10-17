@@ -129,48 +129,30 @@
             <div class="fat-box">
               <h3>Жирность:</h3>
               <fieldset class="fat-filter">
-                <label>
-                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="0%">
-                  <div class="fat-choice first-choice">0%</div>
-                </label>
-                <label>
-                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="10%" checked>
-                  <div class="fat-choice">до 10%</div>
-                </label>
-                <label>
-                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="30%">
-                  <div class="fat-choice">до 30%</div>
-                </label>
-                <label>
-                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="above 30%">
-                  <div class="fat-choice">выше 30%</div>
-                </label>
+                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="0%" id="0">
+                  <label class="fat-choice first-choice" for="0">0%</label>
+                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="10%" id="10" checked>
+                  <label class="fat-choice" for="10">до 10%</label>
+                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="30%" id="30">
+                  <label class="fat-choice" for="30">до 30%</label>
+                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="above 30%" id="above-30">
+                  <label class="fat-choice" for="above-30">выше 30%</label>
               </fieldset>
 
             </div>
             <div class="filler-box">
               <h3>Наполнители:</h3>
               <fieldset class="filler-filter">
-                <label>
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="chocolate" checked>
-                  <div class="filler first-filler">шоколадные</div>
-                </label>
-                <label>
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="shugar" checked>
-                  <div class="filler">сахарные присыпки</div>
-                </label>
-                <label>
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="fruits">
-                  <div class="filler">фрукты</div>
-                </label>
-                <label>
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="syrup">
-                  <div class="filler">сиропы</div>
-                </label>
-                <label>
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="jams">
-                  <div class="filler">джемы</div>
-                </label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="chocolate" id="chocolate" checked>
+                  <label class="filler first-filler" for="chocolate">шоколадные</label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="shugar" id="shugar" checked>
+                  <label class="filler" for="shugar">сахарные присыпки</label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="fruits" id="fruits">
+                  <label class="filler" for="fruits">фрукты</label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="syrup" id="syrup">
+                  <label class="filler" for="syrup">сиропы</label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="jams" id="jams">
+                  <label class="filler" for="jams">джемы</label>
               </fieldset>
             </div>
             <button class="filter-button" type="submit" name="filter">Применить</button>
