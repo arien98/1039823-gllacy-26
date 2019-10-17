@@ -1364,10 +1364,6 @@ a {
     width: auto;
 }
 
-.contacts-box p.big {
-    margin-top: 6px;
-}
-
 .contacts-box p:nth-of-type(4) {
     margin-top: 2px;
 }
@@ -1383,6 +1379,8 @@ a {
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
+    margin-top: 6px;
+    color: rgb(50, 50, 50);
 }
 
 .contacts-box address {
@@ -1994,16 +1992,16 @@ a {
 }
 
 .option-1 {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
 }
 
 .option {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #323232;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #323232;
 }
 
 select::-ms-expand {
