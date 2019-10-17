@@ -13,7 +13,7 @@
           <a href="index.html"><img class="logo" src="img/logo.svg" alt="Логотип магазина Глэйси" width="154" height="64"></a>
           <div class="header-box">
             <ul class="site-navigation">
-              <li>
+              <li class="site-navigation-item">
                 <a href="" class="navigation_first-level on-page">Каталог</a>
                   <ul class="catalog-list">
                     <li>
@@ -110,7 +110,10 @@
             <div class="popularity-box">
               <h3>Сортировка:</h3>
               <select class="popularity-filter" name="popularity">
-                <option disabled selected>по популярности</option>
+                <option class="option option-1" value="famous"  selected>по популярности</option>
+                <option class="option" value="chip">сначала недорогие</option>
+                <option class="option" value="expensive">сначала дорогие</option>
+                <option class="option" value="fatness">по жирности</option>
               </select>
             </div>
             <div class="price-filter">
@@ -126,21 +129,48 @@
             <div class="fat-box">
               <h3>Жирность:</h3>
               <fieldset class="fat-filter">
-                <label><input class="fat-choice first-choice" type="radio" name="fatness" value="0%">0%</label>
-                <label><input class="fat-choice" type="radio" name="fatness" value="10%" checked>до 10%</label>
-                <label><input class="fat-choice" type="radio" name="fatness" value="30%">до 30%</label>
-                <label><input class="fat-choice" type="radio" name="fatness" value="above 30%">выше 30%</label>
+                <label>
+                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="0%">
+                  <div class="fat-choice first-choice">0%</div>
+                </label>
+                <label>
+                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="10%" checked>
+                  <div class="fat-choice">до 10%</div>
+                </label>
+                <label>
+                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="30%">
+                  <div class="fat-choice">до 30%</div>
+                </label>
+                <label>
+                  <input class="visually-hidden fat-radio" type="radio" name="fatness" value="above 30%">
+                  <div class="fat-choice">выше 30%</div>
+                </label>
               </fieldset>
 
             </div>
             <div class="filler-box">
               <h3>Наполнители:</h3>
               <fieldset class="filler-filter">
-                <label><input class="filler first-choice" type="checkbox" name="filler" value="chocolate" checked>шоколадные</label>
-                <label><input class="filler" type="checkbox" name="filler" value="shugar" checked>сахарные присыпки</label>
-                <label><input class="filler" type="checkbox" name="filler" value="fruits">фрукты</label>
-                <label><input class="filler" type="checkbox" name="filler" value="syrup">сиропы</label>
-                <label><input class="filler" type="checkbox" name="filler" value="jams">джемы</label>
+                <label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="chocolate" checked>
+                  <div class="filler first-filler">шоколадные</div>
+                </label>
+                <label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="shugar" checked>
+                  <div class="filler">сахарные присыпки</div>
+                </label>
+                <label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="fruits">
+                  <div class="filler">фрукты</div>
+                </label>
+                <label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="syrup">
+                  <div class="filler">сиропы</div>
+                </label>
+                <label>
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="filler" value="jams">
+                  <div class="filler">джемы</div>
+                </label>
               </fieldset>
             </div>
             <button class="filter-button" type="submit" name="filter">Применить</button>
@@ -152,7 +182,7 @@
           <ul class="catalog">
             <li class="catalog-item">
               <a class="catalog-item_name" href="#">
-                <span> Сливочное с апельсиновым</span>
+                <span>Сливочное с апельсиновым</span>
                 <span>джемом и цитрусовой стружкой</span>
               </a>
               <a href="#"><img src="img/product-1.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой " width="267" height="267"></a>
